@@ -25,7 +25,7 @@ Il y a deux dossiers :
 * [***utilities.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/utilities.py) : fichier qui contient des fonctions d'affichages;
 
 ## Rapport
-* [***TP2_HADDAD_OTTE_POINTEAU***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/TP2_HADDAD_OTTE_POINTEAU) : rapport qui contient la description detailler de chaque fichier montrant la structure de notre TP, puis il y a l'évaluation de nos données et pour finir un cas d'usage.
+* [***TP2_HADDAD_OTTE_POINTEAU***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/TP2_HADDAD_OTTE_POINTEAU.pdf) : rapport qui contient la description detailler de chaque fichier montrant la structure de notre TP, puis il y a l'évaluation de nos données et pour finir un cas d'usage.
 
 ## Utilisation
 
