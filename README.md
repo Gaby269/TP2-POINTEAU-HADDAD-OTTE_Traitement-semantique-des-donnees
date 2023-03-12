@@ -7,11 +7,13 @@ Il y a deux dossiers :
 
  * [***files***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/files) : contient les fichiers [_source.ttl_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/source.ttl) et [_target.ttl_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/target.ttl) ainsi que [_rdfDHT.rdf_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/rdfDHT.rdf).
  
+ * [***graph***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/graph) : Contient le graph des f-measures en fonction des fonctions de similarités et des seuils, le tout en fonction du temps.
+   
  * [***result***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/result) : Contient les fichiers résultats obtenus comme le fichier texte avec les triplets, ainsi que le fichier csv contenant les f-measures calculés. Ils sont dans le dossier avec une date et une heure (celle de la dernière execution). Il faut l'ajouter avec :
  ```
  mkdir result
  ```
-  * [***graph***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/graph) : Contient le graph des f-measures en fonction des fonctions de similarités et des seuils, le tout en fonction du temps.
+
 
 ## Codes
 
