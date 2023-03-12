@@ -42,8 +42,14 @@ pip install nltk
 pip install re
 ```
 
-#### Lancement du code : 
+#### Lancement du code pour le choix de l'utilisateur : 
 
 ```python
 python3 main.py
+```
+
+#### Lancement du code pour chaque fonction de similarité et chaque seuil : 
+
+```python
+python3 calcul-f-measure.py
 ```
