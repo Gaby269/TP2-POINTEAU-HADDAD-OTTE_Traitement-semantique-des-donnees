@@ -9,7 +9,7 @@ Il y a deux dossiers :
  
  * [***graph***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/graph) : Contient le graph des f-measures en fonction des fonctions de similarités et des seuils, le tout en fonction du temps.
    
- * [***result***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/result) : Contient les fichiers résultats obtenus comme le fichier texte avec les triplets, ainsi que le fichier csv contenant les f-measures calculés. Ils sont dans le dossier avec une date et une heure (celle de la dernière execution). Il faut l'ajouter avec :
+ * [***result***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/results) : Contient les fichiers résultats obtenus comme le fichier texte avec les triplets, ainsi que le fichier csv contenant les f-measures calculés. Ils sont dans le dossier avec une date et une heure (celle de la dernière execution). Il faut l'ajouter avec :
  ```
  mkdir result
  ```
