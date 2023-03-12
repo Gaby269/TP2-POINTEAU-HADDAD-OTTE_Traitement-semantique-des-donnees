@@ -5,7 +5,7 @@
 
 Il y a deux dossiers : 
 
- * [***files***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/files) : contient les fichiers [_source.ttl_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/source.ttl) et [_target.ttl_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/target.ttl) ainsi que [_rdfDHT.rdf_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/rdfDHT.rdf).
+ * [***files***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/files) : contient les fichiers [_source.ttl_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/source.ttl) et [_target.ttl_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/target.ttl) ainsi que [_rdfDHT.rdf_](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/files/refDHT.rdf).
  
  * [***graph***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/graph) : Contient le graph des f-measures en fonction des fonctions de similarités et des seuils, le tout en fonction du temps.
    
