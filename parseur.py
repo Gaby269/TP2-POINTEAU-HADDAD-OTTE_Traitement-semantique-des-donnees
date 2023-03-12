@@ -22,8 +22,7 @@ def split_property(string):
 
 		# Si on rencontre un guillement
 		if c == "\"":
-			string_open = not (string_open
-			                   )  # changement d'état par rapport aux guillemets
+			string_open = not (string_open)  # changement d'état par rapport aux guillemets
 
 		# Sinon Si c'est un crochet ouvrant et qu'une chaine est en cours de traitement
 		elif c == "[" and not (string_open):
@@ -73,27 +72,21 @@ def formater(entity):
 		# Si la valeur de la propriété commence par un crochet ouvrant
 		if object.startswith("["):
 
-			object_brckets = object.strip(
-			 " []")  # suppression des crochets pour avoir la sous-chaine
-			object_brckets_splitted = split_property(
-			 object_brckets)  # parse la chaine à l'aide de split_property
-			object_brckets_formated = {
-			}  # définie un sous-dictionnaire courant pour stocker les sous chaines des propriétés
+			object_brckets = object.strip(" []")  # suppression des crochets pour avoir la sous-chaine
+			object_brckets_splitted = split_property(object_brckets)  # parse la chaine à l'aide de split_property
+			object_brckets_formated = {}  # définie un sous-dictionnaire courant pour stocker les sous chaines des propriétés
 
 			# Pour chaque sous-propriété dans la liste
 			for sub_prop in object_brckets_splitted:
 				sps = sub_prop.strip()  # supprime les espace avt et après la chaine
-				sub_cut = sps.index(
-				 " ")  # trouver l'index de la première occurence d'un espace
+				sub_cut = sps.index(" ")  # trouver l'index de la première occurence d'un espace
 				sub_key = sps[:sub_cut].strip()  # stocker dans la clé le début
 				sub_object = sps[sub_cut:].strip(". ")  # stocker dans l'object la fin
-				object_brckets_formated[
-				 sub_key] = sub_object  # ajout dans le sous-dico avec comme clé le nom de la propriété
+				object_brckets_formated[sub_key] = sub_object  # ajout dans le sous-dico avec comme clé le nom de la propriété
 
-			proprietes[
-			 key] = object_brckets_formated  # Ajout au dico des propriétés générales le sous-dico courant
+			proprietes[key] = object_brckets_formated  # Ajout au dico des propriétés générales le sous-dico courant
 
-# Sinon si c'est pas un crochet ouvrant
+		# Sinon si c'est pas un crochet ouvrant
 		else:
 			proprietes[key] = object  # ajout au dictionnaire simplement
 
@@ -104,11 +97,9 @@ def formater(entity):
 # Pour obtenir un dictionnaire de toutes les entités et les propriétés de chaque
 def parseur(file):
 
-	RDF_parse = {
-	}  # dictionnaire vide qui sera rempli avec les entités du fichier
+	RDF_parse = {}  # dictionnaire vide qui sera rempli avec les entités du fichier
 	prefixes = {}  # dictionnaire qui stocke les préfixes du fichier
-	entite_raw = [
-	]  # liste qui stocke les lignes brut d'une entité en cours de traitement
+	entite_raw = []  # liste qui stocke les lignes brut d'une entité en cours de traitement
 
 	# Parcours du fichier en lecture
 	for line in open(file, "r", encoding='utf8'):
@@ -123,8 +114,7 @@ def parseur(file):
 		elif ls.startswith("@prefix"):
 
 			prefixe = ls.split()  # on split par les espaces
-			prefixes[prefixe[1].split(":")[0]] = prefixe[
-			 2]  # separation entre le nom et le lien
+			prefixes[prefixe[1].split(":")[0]] = prefixe[2]  # separation entre le nom et le lien
 			# regex : <[^>]*>
 
 		# Sinon
@@ -134,8 +124,7 @@ def parseur(file):
 			# Si la ligne se termine par un point
 			if ls[-1] == ".":
 				entite_form = formater(entite_raw)  # formater la liste des entités
-				RDF_parse[entite_raw[
-				 0]] = entite_form  # remplir le dico par la liste des entités formatter (clé : entité)
+				RDF_parse[entite_raw[0]] = entite_form  # remplir le dico par la liste des entités formatter (clé : entité)
 				entite_raw = []  # vider le tableau courant
 
 	return RDF_parse  # return du dictionnaire
@@ -187,7 +176,7 @@ def ground_truth_parser():
 
 	# Pour chaque élément de chaque liste d'entite
 	for i in range(len(entite_1)):
-		true_triplets.append((entite_1[i], "owl:sameAs", entite_2[i])) # ajout du triplet dans true_triplet
+		true_triplets.append((entite_1[i], entite_2[i])) # ajout du triplet dans true_triplet
 
 	return true_triplets 
 
@@ -200,13 +189,12 @@ def cutter(triplet_list):
 		subj, pred, obj = triplet
 		if subj[-1] == ">":
 			subj = subj[1:-1]
-		if obj[-1] == ">":
-			obj = obj[1:-1]
 		if pred[-1] == ">":
 			pred = pred[1:-1]
 		triplet_list[index] = (subj, pred, obj)
 
 	return triplet_list
+
 
 # fonction qui compte le nombre de propriétés de chaque entité et renvoie un dictionnaire
 def count_properties(triplets):

@@ -33,37 +33,37 @@ def levenshtein_similarity(chaine1, chaine2):
 	return 1 - norm_dist # retourne l'inverse
 
 
-## Similarité SMOA
-# def smoa_similarity(chaine1, chaine2, matrice_poids):
+# Similarité SMOA
+def smoa_similarity(chaine1, chaine2, matrice_poids):
 
-# 	taille1, taille2 = len(chaine1), len(
-# 	 chaine2)  # cacul des taille des deux chaines
+	taille1, taille2 = len(chaine1), len(
+	 chaine2)  # cacul des taille des deux chaines
 
-# 	# Initialisation de la matrice
-# 	tab_similarite = np.zeros(
-# 	 (taille1 + 1, taille2 + 1))  # initialisation de la matrice
-# 	for i in range(taille1 + 1):
-# 		tab_similarite[i, 0] = i  # initialisation par i de la premiere ligne
-# 	for j in range(taille2 + 1):
-# 		tab_similarite[0, j] = j  # initialisation par j de la premiere colonne
+	# Initialisation de la matrice
+	tab_similarite = np.zeros(
+	 (taille1 + 1, taille2 + 1))  # initialisation de la matrice
+	for i in range(taille1 + 1):
+		tab_similarite[i, 0] = i  # initialisation par i de la premiere ligne
+	for j in range(taille2 + 1):
+		tab_similarite[0, j] = j  # initialisation par j de la premiere colonne
 
-# 	# Remplissage de la matrice de similarité
-# 	for i in range(taille1):
-# 		for j in range(taille2):
+	# Remplissage de la matrice de similarité
+	for i in range(taille1):
+		for j in range(taille2):
 
-# 			# Coût d'alignement de deux sous-chaînes par la matrice des poid
-# 			cout = matrice_poids[chaine1[i], chaine2[j]]
+			# Coût d'alignement de deux sous-chaînes par la matrice des poid
+			cout = matrice_poids[chaine1[i], chaine2[j]]
 
-# 			# Calcul de la similarité d'alignement en fonction des similarité d'avant
-# 			tab_similarite[i, j] = min(tab_similarite[i, j] + cout,
-# 			                           tab_similarite[i + 1, j] + 1,
-# 			                           tab_similarite[i, j + 1] + 1)
+			# Calcul de la similarité d'alignement en fonction des similarité d'avant
+			tab_similarite[i, j] = min(tab_similarite[i, j] + cout,
+			                           tab_similarite[i + 1, j] + 1,
+			                           tab_similarite[i, j + 1] + 1)
 
-# 	# Normalisation de la similarité
-# 	max_len = max(taille1, taille2)
-# 	similarite = 1 - tab_similarite[taille1, taille2] / max_len
+	# Normalisation de la similarité
+	max_len = max(taille1, taille2)
+	similarite = 1 - tab_similarite[taille1, taille2] / max_len
 
-# 	return similarite
+	return similarite
 
 
 ## Similarity de N-Grammes
@@ -145,6 +145,7 @@ def monge_elkan_symmetric(chaine1, chaine2):
 	return monge_elkan_import.MongeElkan().get_raw_score(list1, list2)  # applique la similarité importé
 
 
+### Moyenne de toutes les similarités
 def moyenne_des_similarites(str1, str2):
     simil1 = levenshtein_similarity(str1, str2)
     simil2 = jaro_similarity(str1, str2)
