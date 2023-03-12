@@ -11,6 +11,7 @@ Il y a deux dossiers :
  ```
  mkdir result
  ```
+  * [***graph***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/graph) : Contient le graph des f-measures en fonction des fonctions de similarités et des seuils.
 
 ## Codes
 
