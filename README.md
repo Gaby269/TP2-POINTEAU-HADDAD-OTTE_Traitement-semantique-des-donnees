@@ -18,7 +18,6 @@ Il y a deux dossiers :
 ## Codes
 
 * [***calcul-f-mesure.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/calcul-f-mesure.py) : comme le fichier main 
-* [***graph.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/graph.py) : fichier créeant le graph à partir des f-measures calculées;
 * [***main.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/main.py) : fichier qui parse les fichiers .ttl et .rdf et compare les deux fichiers source et target pour obtenir les triplets indiquant les deux entités sont similaires. Les triplets seront écrit dans le fichier text dans le dossier [result](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/result). Il calcul la precision, le rappel et la f-measure et les écrits dans le fichier csv créé dans le dossier [result](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/tree/main/result);
 * [***parseur.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/parseur.py) : fichier qui parse les différents fichiers pour pouvoir les exploiter à notre manière;
 * [***similarites.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/similarites.py) : fichier contenant toutes les fonctions de similarités qu'on utilise qu'elle soit écrite par nous ou importer;
