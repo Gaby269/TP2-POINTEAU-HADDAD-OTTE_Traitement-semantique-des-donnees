@@ -12,7 +12,7 @@ Il y a deux dossiers :
  mkdir result
  ```
 
-## Autres fichiers
+## Codes
 
 * [***calcul-f-mesure.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/calcul-f-mesure.py) : comme le fichier main 
 * [***graph.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/graph.py) : fichier créeant le graph à partir des f-measures calculées;
@@ -21,4 +21,28 @@ Il y a deux dossiers :
 * [***similarites.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/similarites.py) : fichier contenant toutes les fonctions de similarités qu'on utilise qu'elle soit écrite par nous ou importer;
 * [***utilities.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/utilities.py) : fichier qui contient des fonctions d'affichages;
 
-* [***utilities.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/utilities.py) : 
+## Rapport
+* [***utilities.py***](https://github.com/Gaby269/TP2-POINTEAU-HADDAD-OTTE_Traitement-semantique-des-donnees/blob/main/utilities.py) : rapport qui contient la description detailler de chaque fichier montrant la structure de notre TP, puis il y a l'évaluation de nos données et pour finir un cas d'usage.
+
+## Utilisation
+
+#### Installation des différentes librairies : 
+
+```python
+pip install csv
+pip install rdflib
+pip install utilities
+pip install similarites
+pip install time
+pip install os
+pip install numpy
+pip install Levenshtein
+pip install nltk
+pip install re
+```
+
+#### Lancement du code : 
+
+```python
+python3 main.py
+```
